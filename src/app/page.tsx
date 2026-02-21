@@ -23,6 +23,7 @@ export default function Home() {
     return (
         <main className="relative w-full min-h-screen bg-[#000000] text-white selection:bg-white/20">
 
+            {/* Trigger Build: Initial Production */}
             {/* Fixed 3D Background Layer */}
             <div className="fixed inset-0 z-0">
                 <Background3D />
