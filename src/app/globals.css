@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ohzi-bg: #000000;
+  --color-ohzi-fg: #FFFFFF;
+  --color-ohzi-accent-orange: #ff6b35;
+  --color-ohzi-accent-magenta: #ff00ff;
+  --color-ohzi-accent-blue: #00ffff;
+}
+
+:root {
+  background-color: var(--color-ohzi-bg);
+  color: var(--color-ohzi-fg);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer base {
+  body {
+    @apply m-0 p-0 box-border antialiased selection:bg-white/20;
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+}
